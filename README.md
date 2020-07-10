@@ -10,4 +10,7 @@ To run both apps you have common instructions.
 - Start the server `yarn start` or `npm start`.
 - Goto to `localhost:3000`. You can see the app up and running. 
 
-**Note: If you are facing any difficulty you can raise an issue or message me personally.**
+### Note:
+- If you are facing any difficulty you can raise an issue or message me personally.
+- Also, make sure that you are using the latest stable version of node (Prefer 12.14.1)
+
