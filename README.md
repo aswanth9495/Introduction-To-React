@@ -9,6 +9,12 @@ To run both apps you have common instructions.
 - Install the dependencies `yarn install` or `npm install`.  Whatever package manager you have installed.
 - Start the server `yarn start` or `npm start`.
 - Goto to `localhost:3000`. You can see the app up and running. 
+### Screenshots 
+
+#### Todo App
+![todo app](screenshots/SS2.png)
+#### Counter App
+![counter app](screenshots/SS3.png)
 
 ### Note:
 - If you are facing any difficulty you can raise an issue or message me personally.
