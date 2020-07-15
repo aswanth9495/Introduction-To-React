@@ -1,41 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
-import TodoList from './TodoList';
-import AddTodo from './AddTodo';
+import { BrowserRouter, Route } from 'react-router-dom';
 
+import './App.scss';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Navbar from './Navbar'
 class App extends Component {
-  state = {
-    todoList: [
-      { id: 0, item: 'Buy Milk' },
-      { id: 1, item: 'Buy Groceries' },
-    ],
-  }
-
-  addItem = (newTodo) => {
-    const newTodoList = [...this.state.todoList, { id: this.state.todoList.length ,item: newTodo}];
-    this.setState({
-      todoList: newTodoList,
-    })
-  }
-  deleteItem = (id) => {
-    const newTodoList = this.state.todoList.filter(
-      (item) => (
-        item.id !== id
-      )
-    );
-
-    this.setState({
-      todoList: newTodoList,
-    })
-  }
-
   render() {
     return (
-      <div className="App">
-        <h1>TODO APP</h1>
-        <TodoList list={this.state.todoList} deleteItem={this.deleteItem} />
-        <AddTodo addItem={this.addItem} />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/about" component={About} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
