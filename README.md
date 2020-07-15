@@ -1,7 +1,11 @@
 # Introduction to React
 
-This repository contains the code of the 2 apps made during the **Introduction To React** lecture.
-The **Todo** app is in the **Master** branch and the **Counter** app is in the **counter-app** branch. (To change branch you can click on the **Branch** dropdown in the top left corner of thhe github repository).
+This repository contains the code of the apps made during the **React** lecture. (To change branch you can click on the **Branch** dropdown in the top left corner of thhe github repository).
+
+## Apps and branches
+- master -> Todo App
+- counter-app -> Counter App
+- routes -> Blog App using Routers
 
 ![branch dropdown](screenshots/SS1.png)
 
